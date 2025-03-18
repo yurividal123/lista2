@@ -7,6 +7,9 @@
 </head>
 <body>
     <script>
+        function prompt() {
+            return lines.shift()
+        }
         var [A, B] = prompt("").split(' ').map(Number);
 
         if (A % B == 0 || B % A == 0) {

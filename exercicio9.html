@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio9</title>
+</head>
+<body>
+    <script>
+        //function prompt() {
+            //return lines.shift()
+        //}
+        var [HoraInicial, HoraFinal] = prompt("").split(' ').map(Number)
+
+        var Duracao
+        if (HoraFinal > HoraInicial) {
+            Duracao = HoraFinal - HoraInicial
+        }
+
+        else {
+            Duracao = (24 - HoraInicial) + HoraFinal
+        }
+
+        console.log("O JOGO DUROU "+Duracao +" HORA(S)")
+    </script>
+</body>
+</html>
